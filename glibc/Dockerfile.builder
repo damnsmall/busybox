@@ -73,6 +73,7 @@ RUN set -x \
 		rootfs/bin/getconf \
 		/lib/"$(gcc -print-multiarch)"/libnss*.so.* \
 		/lib/"$(gcc -print-multiarch)"/libpthread.so.* \
+		/lib/"$(gcc -print-multiarch)"/libdl.so.* \
 	&& while [ "$#" -gt 0 ]; do \
 		f="$1"; shift; \
 		fn="$(basename "$f")"; \ 

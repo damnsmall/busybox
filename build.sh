@@ -9,7 +9,7 @@ if [ ${#versions[@]} -eq 0 ]; then
 fi
 versions=( "${versions[@]%/}" )
 
-base='busybox:'
+base='damnsmall/busybox:'
 for version in "${versions[@]}"; do
 	(
 		set -x
