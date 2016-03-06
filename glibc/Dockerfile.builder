@@ -74,6 +74,7 @@ RUN set -x \
 		/lib/"$(gcc -print-multiarch)"/libnss*.so.* \
 		/lib/"$(gcc -print-multiarch)"/libpthread.so.* \
 		/lib/"$(gcc -print-multiarch)"/libdl.so.* \
+		/lib/"$(gcc -print-multiarch)"/libanl.so.* \
 	&& while [ "$#" -gt 0 ]; do \
 		f="$1"; shift; \
 		fn="$(basename "$f")"; \ 
